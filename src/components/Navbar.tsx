@@ -21,19 +21,7 @@ export default function Navbar() {
   return (
     <header className="bg-white shadow">
       <nav className="container mx-auto px-4">
-        <NavigationMenu.Root className="relative flex h-16 items-center justify-between">
-          <div className="flex items-center">
-            <Link href="/" className="text-xl font-bold text-gray-800">
-              <Image
-                src="/images/logo.png"
-                alt="Coffee Valley"
-                width={240}
-                height={96}
-                className="h-24 w-auto"
-                unoptimized
-              />
-            </Link>
-          </div>
+        <NavigationMenu.Root className="relative flex h-16 items-center justify-end">
 
           {session ? (
             <NavigationMenu.List className="flex items-center space-x-4">

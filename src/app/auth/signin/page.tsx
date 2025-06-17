@@ -37,7 +37,6 @@ export default function SignIn() {
     } catch (error) {
       setError('Something went wrong. Please try again.')
       setLoading(false)
-      console.log(error)
     }
   }
 
@@ -61,7 +60,7 @@ export default function SignIn() {
         )}
 
         <div>
-          <label htmlFor="email" className="block min-w-48 text-sm font-medium text-gray-700">
+          <label htmlFor="email" className="block text-sm font-medium text-gray-700">
             Email address
           </label>
           <input
@@ -70,7 +69,7 @@ export default function SignIn() {
             type="email"
             autoComplete="email"
             required
-            className="auth-input mt-2 w-full px-4 py-2"
+            className="auth-input mt-2"
           />
         </div>
 
@@ -84,7 +83,7 @@ export default function SignIn() {
             type="password"
             autoComplete="current-password"
             required
-            className="auth-input mt-2 w-full px-4 py-2"
+            className="auth-input mt-2"
           />
         </div>
 
