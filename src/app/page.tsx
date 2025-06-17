@@ -10,7 +10,7 @@ export default async function Home() {
 
   return (
     <div className="space-y-6">
-      <h1 className="text-3xl font-bold">Welcome to DataON</h1>
+      <h1 className="text-3xl font-bold">Welcome to Coffee Valley</h1>
       <p className="text-gray-600">
         Your comprehensive data management solution. Use the navigation menu above to access different features.
       </p>

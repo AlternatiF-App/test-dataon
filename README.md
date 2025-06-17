@@ -30,7 +30,7 @@ A full-stack Next.js application for data management with authentication and a m
 3. Create a `.env` file based on `.env.example` and fill in your values:
    ```
    # Database
-   DATABASE_URL="postgresql://user:password@localhost:5432/dataon"
+   DATABASE_URL="postgresql://user:password@localhost:5432/test_dataon"
 
    # NextAuth
    NEXTAUTH_URL="http://localhost:3000"

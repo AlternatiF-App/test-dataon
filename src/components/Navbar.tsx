@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { signOut, useSession } from 'next-auth/react'
 import * as NavigationMenu from '@radix-ui/react-navigation-menu'
+import Image from 'next/image'
 
 export default function Navbar() {
   const pathname = usePathname()
@@ -23,7 +24,14 @@ export default function Navbar() {
         <NavigationMenu.Root className="relative flex h-16 items-center justify-between">
           <div className="flex items-center">
             <Link href="/" className="text-xl font-bold text-gray-800">
-              DataON
+              <Image
+                src="/images/logo.png"
+                alt="Coffee Valley"
+                width={240}
+                height={96}
+                className="h-24 w-auto"
+                unoptimized
+              />
             </Link>
           </div>
 

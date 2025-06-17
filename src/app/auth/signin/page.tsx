@@ -45,7 +45,7 @@ export default function SignIn() {
       title="Welcome back"
       subtitle={
         <>
-          New to DataON?{' '}
+          New to Coffee Valley?{' '}
           <Link href="/auth/register" className="font-semibold text-indigo-600 hover:text-indigo-500">
             Create an account
           </Link>
@@ -59,8 +59,8 @@ export default function SignIn() {
           </div>
         )}
 
-        <div>
-          <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+        <div className='flex space-x-4 text-7xl'>
+          <label htmlFor="email" className="block min-w-48 text-sm font-medium text-gray-700">
             Email address
           </label>
           <input
